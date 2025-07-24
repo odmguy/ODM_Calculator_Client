@@ -1,0 +1,25 @@
+
+#loadGetterSetterAsProperties
+property origin "xom:/Calculator rules//Calculator Java"
+property uuid "60221242-d4c3-41c6-89a2-0f73f81c4c5c"
+package odm;
+
+
+class Answer
+{
+    boolean hasErrors;
+    java.util.Vector messages domain 0,* class string;
+    double result;
+    Answer();
+    void addToMessages(string argument);
+    void removeFromMessages(string argument);
+}
+
+class Calculator
+{
+    double arg1;
+    double arg2;
+    string @operator;
+    Calculator();
+}
+

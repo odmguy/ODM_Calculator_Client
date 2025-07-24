@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Divide by Zero</name>
+  <uuid>9c97e387-5f4e-4e1a-85dc-e0ac05da8305</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    the operator of Calculator is "/"
+    and the arg2 of Calculator is 0
+then
+	make it true that Answer has errors ; 
+	add "Divide by zero detected." to the messages of Answer ; 	]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

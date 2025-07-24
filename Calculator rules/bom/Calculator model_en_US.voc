@@ -1,0 +1,19 @@
+# Vocabulary Properties
+uuid = 4859db34-3ea8-4079-9906-cc9a303003e5
+
+# odm.Answer
+odm.Answer#concept.label = answer
+odm.Answer.addToMessages(java.lang.String)#phrase.action = add {0} to the messages of {this}
+odm.Answer.hasErrors#phrase.action = make it {has errors} that {this} has errors
+odm.Answer.hasErrors#phrase.navigation = {this} has errors
+odm.Answer.messages#phrase.action = set the messages of {this} to {message}
+odm.Answer.messages#phrase.navigation = {message} of {this}
+odm.Answer.removeFromMessages(java.lang.String)#phrase.action = remove {0} from the messages of {this}
+odm.Answer.result#phrase.action = set the result of {this} to {result}
+odm.Answer.result#phrase.navigation = {result} of {this}
+
+# odm.Calculator
+odm.Calculator#concept.label = calculator
+odm.Calculator.arg1#phrase.navigation = {arg1} of {this}
+odm.Calculator.arg2#phrase.navigation = {arg2} of {this}
+odm.Calculator.operator#phrase.navigation = {operator} of {this}

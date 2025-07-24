@@ -1,0 +1,4 @@
+#Mon Jun 23 14:46:32 BST 2025
+ruleset.engine.version=1.70.0
+ruleset.engine=de
+ruleset.uuid=3ec1eba5-45b8-46d1-a97d-d71a2db596f7

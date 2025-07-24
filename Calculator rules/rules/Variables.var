@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Variables</name>
+  <uuid>9fdc49ab-7070-460a-ad9c-67ca65cde993</uuid>
+  <variables name="calculator" type="odm.Calculator" initialValue="" verbalization="Calculator"/>
+  <variables name="answer" type="odm.Answer" initialValue="new odm.Answer()" verbalization="Answer"/>
+</ilog.rules.studio.model.base:VariableSet>

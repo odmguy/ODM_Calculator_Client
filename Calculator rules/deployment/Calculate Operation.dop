@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="Calculate_Operation" usingRuleflow="true" ruleflowName="Ruleflow" targetRuleProjectName="Calculator rules">
+  <name>Calculate Operation</name>
+  <uuid>d7daad0c-f5f9-4aa1-af7b-4b67e077e0c7</uuid>
+  <referencedVariables variableName="calculator" variableSetName="Variables">
+    <variableSet href="../rules/Variables.var#9fdc49ab-7070-460a-ad9c-67ca65cde993"/>
+  </referencedVariables>
+  <referencedVariables variableName="answer" variableSetName="Variables" direction="OUT">
+    <variableSet href="../rules/Variables.var#9fdc49ab-7070-460a-ad9c-67ca65cde993"/>
+  </referencedVariables>
+  <ruleflow href="../rules/Ruleflow.rfl#6fa855e3-1cd2-4034-946b-291e2a795944"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="Calculate Operation_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../Calculator%20rules#2776ba69-219b-4b0d-88a0-d7b1cc5c8126"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

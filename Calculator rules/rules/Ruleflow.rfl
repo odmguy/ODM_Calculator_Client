@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>Ruleflow</name>
+  <uuid>6fa855e3-1cd2-4034-946b-291e2a795944</uuid>
+  <locale>en_US</locale>
+  <categories>any</categories>
+  <rfModel>
+<Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+  <Body>
+    <TaskList>
+      <StartTask Identifier="task_2"/>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="Init" Ordering="Default">
+        <RuleList>
+          <Package Name="Init"/>
+        </RuleList>
+      </RuleTask>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="Calculation" Ordering="Default">
+        <RuleList>
+          <Package Name="Calculation"/>
+        </RuleList>
+      </RuleTask>
+      <StopTask Identifier="task_3"/>
+    </TaskList>
+    <NodeList>
+      <TaskNode Identifier="node_0" Task="Init"/>
+      <TaskNode Identifier="node_1" Task="Calculation"/>
+      <TaskNode Identifier="node2" Task="task_2"/>
+      <TaskNode Identifier="node3" Task="task_3"/>
+    </NodeList>
+    <TransitionList>
+      <Transition Identifier="link4" Source="node2" Target="node_0"/>
+      <Transition Identifier="link5" Source="node_0" Target="node_1"/>
+      <Transition Identifier="link6" Source="node_1" Target="node3"/>
+      <Transition Identifier="link7" Source="node_0" Target="node3">
+        <Conditions Language="bal"><![CDATA[Answer has errors ]]></Conditions>
+      </Transition>
+    </TransitionList>
+  </Body>
+  <Resources>
+    <ResourceSet Locale="en_US">
+      <Data Name="node3#y">245.0</Data>
+      <Data Name="node2#y">15.0</Data>
+      <Data Name="node3#x">54.176</Data>
+      <Data Name="node2#x">54.176</Data>
+      <Data Name="node_0#label">Init</Data>
+      <Data Name="node_0#x">54.176</Data>
+      <Data Name="node_0#y">90.0</Data>
+      <Data Name="node_1#label">Calculation</Data>
+      <Data Name="node_1#x">54.176</Data>
+      <Data Name="node_1#y">170.0</Data>
+      <Data Name="link7#label">Errors</Data>
+    </ResourceSet>
+  </Resources>
+  <Properties/>
+</Ruleflow>
+</rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>
